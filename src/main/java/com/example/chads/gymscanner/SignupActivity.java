@@ -112,8 +112,8 @@ public class SignupActivity extends AppCompatActivity {
                     m.setId(-1);
                     m.setAvatar(mCurrentPhotoPath);
                     m.setFirstName(etxtFirstName.getText().toString());
-                    m.setFirstName(etxtFirstName.getText().toString());
-                    m.setDob(etxtFirstName.getText().toString());
+                    m.setLastName(etxtLastName.getText().toString());
+                    m.setDob(etxtDob.getText().toString());
                     m.setAge(Integer.parseInt(etxtAge.getText().toString()));
                     m.setAddress(etxtAddress.getText().toString());
                     m.setCity(etxtCity.getText().toString());
@@ -123,6 +123,8 @@ public class SignupActivity extends AppCompatActivity {
                     m.setStatus(false);
                     db.addMember(m);
                     Intent intent = new Intent(SignupActivity.this, MainActivity.class);
+                    intent.putExtra("status", "successful");
+                    startActivity(intent);
                 } else {
                     Toast.makeText(SignupActivity.this, "Please fill out all forms.", Toast.LENGTH_LONG).show();
                 }
@@ -160,7 +162,7 @@ public class SignupActivity extends AppCompatActivity {
         if (requestCode == REQUEST_TAKE_PHOTO && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            mCurrentPhotoPath = saveToInternalStorage(imageBitmap);
+            saveToInternalStorage(imageBitmap);
             imgPicture.setImageBitmap(imageBitmap);
             imgPicture.setTag(mCurrentPhotoPath);
             Log.d("create bitmap, here is the uri", mCurrentPhotoPath.toString());
@@ -184,7 +186,9 @@ public class SignupActivity extends AppCompatActivity {
         // Create imageDir
         File mypath = new File(directory,imageFileName);
         mCurrentPhotoPath = mypath.getAbsolutePath();
-        Log.d("path name", mCurrentPhotoPath);
+        Log.d("absolute path name", mCurrentPhotoPath);
+        Log.d("path name", mypath.getPath());
+        Log.d("directory + name", mCurrentPhotoPath + "/" + imageFileName);
 
         FileOutputStream fos = null;
         try {

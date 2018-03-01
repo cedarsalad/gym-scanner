@@ -28,6 +28,18 @@ public class MainActivity extends AppCompatActivity {
         btnCheckIn = (Button) findViewById(R.id.btnCheckIn);
         btnAllMembers = (Button) findViewById(R.id.btnAllMembers);
 
+        if (getIntent().getStringExtra("status") != null){
+            String status = getIntent().getStringExtra("status");
+            if ( status.equals("successful")){
+                Toast.makeText(getApplicationContext(),"Member added!", Toast.LENGTH_LONG).show();
+            } else if (status.equals("checked-in")){
+                Toast.makeText(getApplicationContext(),"Checked-in!", Toast.LENGTH_LONG).show();
+            } else if (status.equals("checked-out")){
+                Toast.makeText(getApplicationContext(),"Checked-out!", Toast.LENGTH_LONG).show();
+            }
+        }
+
+
         btnNewMember.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
             String format = data.getStringExtra("SCAN_RESULT_FORMAT");
             Member member = db.getMemberByCode(code);
             if (member.getBarcode() != null && member.getBarcode().equals(code)){
-                db.addVisit(code);
                 Intent intent = new Intent(MainActivity.this, CheckInActivity.class);
                 intent.putExtra("code", code);
                 startActivity(intent);

@@ -18,7 +18,7 @@ public class DBManager extends SQLiteOpenHelper {
     //Static Variables
 
     //Database version, creates a new database when changed
-    private static final int DB_VERSION = 3;
+    private static final int DB_VERSION = 7;
 
     private static final String DB_NAME = "gym";
     private static final String TABLE_NAME = "members";
@@ -76,7 +76,7 @@ public class DBManager extends SQLiteOpenHelper {
         values.put(KEY_BARCODE, member.getBarcode());
         values.put(KEY_VISITS, member.getVisits());
         values.put(KEY_STATUS, member.isStatus());
-
+        Log.d("member created: ", member.toString());
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
@@ -131,14 +131,15 @@ public class DBManager extends SQLiteOpenHelper {
             m.setId(Integer.parseInt(cursor.getString(0)));
             m.setAvatar(cursor.getString(1));
             m.setFirstName(cursor.getString(2));
-            m.setDob(cursor.getString(3));
-            m.setAge(cursor.getInt(4));
-            m.setAddress(cursor.getString(5));
-            m.setCity(cursor.getString(6));
-            m.setProvince(cursor.getString(7));
-            m.setBarcode(cursor.getString(8));
-            m.setVisits(cursor.getInt(9));
-            m.setStatus(cursor.getInt(10) > 0);
+            m.setLastName(cursor.getString(3));
+            m.setDob(cursor.getString(4));
+            m.setAge(cursor.getInt(5));
+            m.setAddress(cursor.getString(6));
+            m.setCity(cursor.getString(7));
+            m.setProvince(cursor.getString(8));
+            m.setBarcode(cursor.getString(9));
+            m.setVisits(cursor.getInt(10));
+            m.setStatus(cursor.getInt(11) > 0);
         }
 
         return m;

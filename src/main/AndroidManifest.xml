@@ -31,7 +31,8 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".CheckInActivity"></activity>
+        <activity android:name=".CheckInActivity" />
+        <activity android:name=".AllMembersActivity"></activity>
     </application>
 
 </manifest>

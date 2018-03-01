@@ -20,34 +20,27 @@
 
     <Button
         android:id="@+id/btnNewMember"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="48dp"
         android:background="#BE082C"
         android:text="New Member"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/btnCheckIn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
-
     <Button
         android:id="@+id/btnAllMembers"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
         android:background="#BE082C"
         android:text="All Members"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
+        android:textSize="30sp "
         app:layout_constraintEnd_toEndOf="@+id/btnCheckIn"
         app:layout_constraintStart_toStartOf="@+id/btnCheckIn"
         app:layout_constraintTop_toBottomOf="@+id/btnCheckIn" />
@@ -55,25 +48,27 @@
     <Button
         android:id="@+id/btnCheckIn"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
         android:background="#BE082C"
         android:text="Check In/Out"
         android:textColor="@android:color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="@+id/btnNewMember"
         app:layout_constraintStart_toStartOf="@+id/btnNewMember"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_marginStart="24dp"
-        android:text="Chad Sarrouf 2018"
+        android:layout_marginTop="8dp"
+        android:text="Chad Sarrouf (2018)"
         android:textColor="@android:color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
