@@ -18,11 +18,11 @@ public class DBManager extends SQLiteOpenHelper {
     //Static Variables
 
     //Database version, creates a new database when changed
-    private static final int DB_VERSION = 7;
+    private static final int DB_VERSION = 13;
 
     private static final String DB_NAME = "gym";
     private static final String TABLE_NAME = "members";
-    private static final String KEY_ID = "rowid";
+    private static final String KEY_ID = "id";
     private static final String KEY_AVATAR = "avatar";
     private static final String KEY_FIRSTNAME = "firstName";
     private static final String KEY_LASTNAME = "lastName";
@@ -41,16 +41,17 @@ public class DBManager extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db){
         String CREATE_MEMBER_TABLE = "CREATE TABLE " + TABLE_NAME + " (";
+        CREATE_MEMBER_TABLE += KEY_ID + " INTEGER PRIMARY KEY, ";
         CREATE_MEMBER_TABLE += KEY_AVATAR + " TEXT, ";
         CREATE_MEMBER_TABLE += KEY_FIRSTNAME + " TEXT, ";
-        CREATE_MEMBER_TABLE += KEY_LASTNAME + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_DOB + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_AGE + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_ADDRESS + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_CITY + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_PROVINCE + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_BARCODE + " TEXT,";
-        CREATE_MEMBER_TABLE += KEY_VISITS + " SMALLINT,";
+        CREATE_MEMBER_TABLE += KEY_LASTNAME + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_DOB + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_AGE + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_ADDRESS + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_CITY + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_PROVINCE + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_BARCODE + " TEXT, ";
+        CREATE_MEMBER_TABLE += KEY_VISITS + " SMALLINT, ";
         CREATE_MEMBER_TABLE += KEY_STATUS + " BOOLEAN)";
 
         db.execSQL(CREATE_MEMBER_TABLE);
@@ -65,6 +66,7 @@ public class DBManager extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, (Byte) null);
         values.put(KEY_AVATAR, member.getAvatar());
         values.put(KEY_FIRSTNAME, member.getFirstName());
         values.put(KEY_LASTNAME, member.getLastName());
@@ -81,8 +83,8 @@ public class DBManager extends SQLiteOpenHelper {
         db.close();
     }
 
-    public List<Member> getAllMembers(){
-        List<Member> members = new ArrayList<Member>();
+    public ArrayList<Member> getAllMembers(){
+        ArrayList<Member> members = new ArrayList<Member>();
         SQLiteDatabase db = this.getWritableDatabase();
 
         String selectQuery = "SELECT * FROM " + TABLE_NAME;
@@ -94,14 +96,15 @@ public class DBManager extends SQLiteOpenHelper {
                 m.setId(Integer.parseInt(cursor.getString(0)));
                 m.setAvatar(cursor.getString(1));
                 m.setFirstName(cursor.getString(2));
-                m.setDob(cursor.getString(3));
-                m.setAge(cursor.getInt(4));
-                m.setAddress(cursor.getString(5));
-                m.setCity(cursor.getString(6));
-                m.setProvince(cursor.getString(7));
-                m.setBarcode(cursor.getString(8));
-                m.setVisits(cursor.getInt(9));
-                m.setStatus(cursor.getInt(10)>0);
+                m.setLastName(cursor.getString(3));
+                m.setDob(cursor.getString(4));
+                m.setAge(cursor.getInt(5));
+                m.setAddress(cursor.getString(6));
+                m.setCity(cursor.getString(7));
+                m.setProvince(cursor.getString(8));
+                m.setBarcode(cursor.getString(9));
+                m.setVisits(cursor.getInt(10));
+                m.setStatus(cursor.getInt(11)>0);
 
                 Log.d("Member #" + cursor.getString(0), m.toString());
                 members.add(m);

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.nfc.Tag;
 import android.provider.MediaStore;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.ActivityCompat;
@@ -60,7 +59,7 @@ public class SignupActivity extends AppCompatActivity {
         btnScan = (Button)findViewById( R.id.btnScan );
         btnRegister = (Button)findViewById( R.id.btnRegister );
         imgPicture = (ImageView)findViewById( R.id.imgPicture );
-        etxtFirstName = (EditText)findViewById( R.id.etxtFirstName );
+        etxtFirstName = (EditText)findViewById( R.id.etxtFirstName);
         etxtLastName = (EditText)findViewById( R.id.etxtLastName );
         etxtAddress = (EditText)findViewById( R.id.etxtAddress );
         etxtDob = (EditText)findViewById( R.id.etxtDob );
@@ -187,9 +186,6 @@ public class SignupActivity extends AppCompatActivity {
         File mypath = new File(directory,imageFileName);
         mCurrentPhotoPath = mypath.getAbsolutePath();
         Log.d("absolute path name", mCurrentPhotoPath);
-        Log.d("path name", mypath.getPath());
-        Log.d("directory + name", mCurrentPhotoPath + "/" + imageFileName);
-
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(mypath);

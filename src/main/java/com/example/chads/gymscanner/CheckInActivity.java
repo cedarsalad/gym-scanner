@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -39,7 +38,7 @@ public class CheckInActivity extends AppCompatActivity {
         txtDob = (TextView) findViewById( R.id.txtDob );
         txtCode = (TextView) findViewById( R.id.txtCode );
         txtVisits = (TextView) findViewById( R.id.txtVisits );
-        txtFirstName = (TextView) findViewById( R.id.txtFirstName );
+        txtFirstName = (TextView) findViewById( R.id.etxtFirstName);
         txtLastName = (TextView) findViewById( R.id.txtLastName );
         imageView = (ImageView) findViewById( R.id.imageView );
         code = getIntent().getStringExtra("code");

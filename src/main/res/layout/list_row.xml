@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BE082C">
+
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="108dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/questionmark" />
+
+    <TextView
+        android:id="@+id/etxtFirstName"
+        android:layout_width="162dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar" />
+
+    <TextView
+        android:id="@+id/txtAdress"
+        android:layout_width="162dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/etxtFirstName" />
+
+    <TextView
+        android:id="@+id/txtLastName"
+        android:layout_width="178dp"
+        android:layout_height="53dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/etxtFirstName"
+        app:layout_constraintTop_toTopOf="@+id/etxtFirstName" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="178dp"
+        android:layout_height="58dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txtAdress"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+
+    <TextView
+        android:id="@+id/txtProvince"
+        android:layout_width="146dp"
+        android:layout_height="58dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txtCity"
+        app:layout_constraintTop_toTopOf="@+id/txtCity" />
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:layout_width="189dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="24dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVisits" />
+
+    <TextView
+        android:id="@+id/txtVisits"
+        android:layout_width="163dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="24dp"
+        android:background="#BE082C"
+        android:gravity="center"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtLastName" />
+
+</android.support.constraint.ConstraintLayout>

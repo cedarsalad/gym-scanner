@@ -51,7 +51,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
+        app:layout_constraintTop_toBottomOf="@+id/etxtFirstName" />
 
     <TextView
         android:id="@+id/txtCode"
@@ -84,7 +84,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtAge" />
 
     <TextView
-        android:id="@+id/txtFirstName"
+        android:id="@+id/etxtFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
