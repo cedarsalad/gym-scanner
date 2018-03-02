@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gymbg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
     tools:context="com.example.chads.gymscanner.SignupActivity">
 
     <Button
@@ -283,6 +285,7 @@
         android:inputType="textCapWords"
         android:textSize="24sp"
         android:focusable="true"
+        android:imeOptions="actionDone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etxtAddress" />
 

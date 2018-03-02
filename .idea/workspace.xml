@@ -14,18 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="224f3a47-8f21-439f-85ec-44f8fb77b65c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_all_members2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/res/layout/list_row.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/AllMembersActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/AllMembersActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/CheckInActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/CheckInActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/DBManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/SignupActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/SignupActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_all_members.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_all_members.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_check_in.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_check_in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_signup.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_signup.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomListAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomListAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/CustomListAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="54" column="48" lean-forward="false" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+            <state relative-caret-position="238">
+              <caret line="53" column="73" lean-forward="false" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_signup.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity_signup.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_signup.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="290" column="43" lean-forward="false" selection-start-line="290" selection-start-column="43" selection-end-line="290" selection-end-column="43" />
+            <state relative-caret-position="153">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -1931,10 +1920,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/AllMembersActivity.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_signup.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/DBManager.java" />
         <option value="$PROJECT_DIR$/src/main/res/layout/list_row.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/CustomListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_signup.xml" />
       </list>
     </option>
   </component>
@@ -2380,7 +2369,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519940409796" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519952283081" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2428,7 +2417,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519940409796" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519952283081" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2611,7 +2600,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519940409797" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519952283082" />
       </method>
     </configuration>
     <list size="1">
@@ -2958,17 +2947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_signup.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="290" column="43" lean-forward="false" selection-start-line="290" selection-start-column="43" selection-end-line="290" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-510">
@@ -2998,6 +2976,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/CustomListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="53" column="73" lean-forward="false" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/list_row.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -3009,14 +2997,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/chads/gymscanner/CustomListAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_signup.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="48" lean-forward="false" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
